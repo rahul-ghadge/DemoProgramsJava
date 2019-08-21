@@ -2,7 +2,7 @@ package com.non.related;
 
 import java.util.Scanner;
 
-public class ChrismasTree {
+public class ChristmasTree {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
