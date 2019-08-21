@@ -12,7 +12,7 @@ public class ChristmasTree {
 
 		int noOfRows = sc.nextInt();
 		int rowCount = 1;
-		System.out.println("** Here Is Your Chrismas Tree **");
+		System.out.println("** Here Is Your Christmas Tree **");
 
 		for (int i = noOfRows; i > 0;) {			
 			for (int j = 1; j < i; j++) {
@@ -83,7 +83,7 @@ public class ChristmasTree {
 
 // Output
 //How Many Rows You Want In Your Tree? -> 7
-//** Here Is Your Chrismas Tree **
+//** Here Is Your Christmas Tree **
 //       A
 //      /*\
 //     /* *\
