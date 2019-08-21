@@ -1,4 +1,3 @@
-package com.non.related;
 
 import java.util.Scanner;
 
