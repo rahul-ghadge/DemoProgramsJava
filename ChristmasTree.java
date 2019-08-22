@@ -13,18 +13,17 @@ public class ChristmasTree {
 		int rowCount = 1;
 		System.out.println("** Here Is Your Christmas Tree **");
 
-		for (int i = noOfRows; i > 0;) {			
-			for (int j = 1; j < i; j++) {
-				System.out.print(" ");
-			}
-			for (int j = 1; j <= rowCount; j++) {
-				if (j == rowCount) {
-					System.out.println(" A");
-					break;
+		loop: for (int i = noOfRows; i > 0;) {			
+				for (int j = 1; j < i; j++) {
+					System.out.print(" ");
+				}
+				for (int j = 1; j <= rowCount; j++) {
+					if (j == rowCount) {
+						System.out.println(" A");
+						break loop;
+					}
 				}
 			}
-			break;
-		}
 
 		
 		for (int i = noOfRows; i > 0; i--) {
