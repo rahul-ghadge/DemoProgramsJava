@@ -73,13 +73,24 @@ public class SumOfNumbers {
 			if (num != 6) {
 				sum += num;
 			} else {
-				// if last index of 9 > i set 9's index to i
+				
+				// *** BELOW BOTH BLOCK OF CODE WORKS SAME USE EITHER 1 OR 2 ***
+				
+				// 1 : using size of list 
+				// ---------------------------------------------------
+				// i = lastNinesIndex > i ? lastNinesIndex : numbers.size();
+				// ---------------------------------------------------
+
+				
+				// 2: using break statement
+				// ---------------------------------------------------
 				if (lastNinesIndex > i) {
 					i = lastNinesIndex;
 				} else {
 					// if last index of 9 not > i break the loop
 					break;
 				}
+				// ---------------------------------------------------
 			}
 		}
 		return sum;
