@@ -1,4 +1,3 @@
-package com.demo.programs;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,11 +15,11 @@ public class SumOfNumbers {
 		System.out.println("Sum of numbers(while loop) :: " + sumOfNumbersUsingWhile(list1));
 
 		List<Integer> list2 = Arrays.asList(new Integer[] { 9, 1, 6, 10 });
-		System.out.println("Sum of numbers(using index) :: " + sumOfNumbersUsingIndex(list2));
+		System.out.println("Sum of numbers(using index) :: " + sumOfNumbersUsingIndexBreak(list2));
 
 		List<Integer> list3 = Arrays
 				.asList(new Integer[] { 9, 1, 6, 10, 9, 90 });
-		System.out.println("Sum of numbers(using index) :: " + sumOfNumbersUsingIndex(list3));
+		System.out.println("Sum of numbers(using index) :: " + sumOfNumbersUsingIndexSize(list3));
 
 	}
 
@@ -61,7 +60,9 @@ public class SumOfNumbers {
 		return sum;
 	}
 
-	public static int sumOfNumbersUsingIndex(List<Integer> numbers) {
+	
+	
+	public static int sumOfNumbersUsingIndexBreak(List<Integer> numbers) {
 
 		int sum = 0;
 		int lastNinesIndex = numbers.lastIndexOf(9);
@@ -73,24 +74,28 @@ public class SumOfNumbers {
 			if (num != 6) {
 				sum += num;
 			} else {
-				
-				// *** BELOW BOTH BLOCK OF CODE WORKS SAME USE EITHER 1 OR 2 ***
-				
-				// 1 : using size of list 
-				// ---------------------------------------------------
-				// i = lastNinesIndex > i ? lastNinesIndex : numbers.size();
-				// ---------------------------------------------------
-
-				
-				// 2: using break statement
-				// ---------------------------------------------------
 				if (lastNinesIndex > i) {
 					i = lastNinesIndex;
 				} else {
 					// if last index of 9 not > i break the loop
 					break;
 				}
-				// ---------------------------------------------------
+			}
+		}
+		return sum;
+	}
+	
+	
+	public static int sumOfNumbersUsingIndexSize(List<Integer> numbers) {
+		int sum = 0;
+		int lastNinesIndex = numbers.lastIndexOf(9);
+		for (int i = 0; i < numbers.size(); i++) {
+			int num = numbers.get(i);
+			if (num != 6) {
+				sum += num;
+			} else {
+				// if lastIndex > i then set currentIndex(i)=lastIndex else currentIndex(i)=lastElement 
+				 i = lastNinesIndex > i ? lastNinesIndex : numbers.size();
 			}
 		}
 		return sum;
