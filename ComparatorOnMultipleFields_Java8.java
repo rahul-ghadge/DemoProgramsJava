@@ -29,7 +29,7 @@ public class ComparatorOnMultipleFields_Java8 {
 		
 		list.add(new Employee(2, "Rohit", "Bhakare", "IT"));
 		list.add(new Employee(1, "Rahul", "Ghadge", "IT"));
-		list.add(new Employee(4, "Rajesh", "Khuntiya", "Management"));
+		list.add(new Employee(4, "Rajesh", "Khuntiya", "Support"));
 		list.add(new Employee(5, "Meeraj", "Khan", "Account"));
 		list.add(new Employee(3, "Jaya", "Singh", "HR"));
 		list.add(new Employee(7, "Rajesh", "Khanna", "Support"));
