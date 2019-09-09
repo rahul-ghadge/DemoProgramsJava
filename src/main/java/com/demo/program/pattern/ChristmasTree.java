@@ -1,3 +1,4 @@
+package com.demo.program.pattern;
 
 import java.util.Scanner;
 
