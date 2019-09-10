@@ -1,4 +1,4 @@
-package com.demo.copy;
+package com.demo.program.copy;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,13 +6,12 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import test.com.demo.IkmTest;
 
 public class DeepCopy {
 
 	public static void main(String[] args) {
 
-    // Create any test class with display method
+		// Create any test class with display method
 		Test test = new Test();
 		test.display();
 
@@ -51,4 +50,13 @@ public class DeepCopy {
 		return t;
 	}
 
+}
+
+
+
+class Test {
+	
+	public void display() {
+		System.out.println("Display method from test class");
+	}
 }

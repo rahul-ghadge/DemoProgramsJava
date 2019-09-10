@@ -1,4 +1,4 @@
-package com.demo.programs.intrfc;
+package com.demo.program.intrface;
 
 interface A {
 	public abstract String print(String name);

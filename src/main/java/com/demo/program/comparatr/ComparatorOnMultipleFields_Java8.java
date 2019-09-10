@@ -1,3 +1,4 @@
+package com.demo.program.comparatr;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -5,28 +6,32 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ComparatorOnMultipleFields_Java8 {
-	
+
 	public static void main(String[] args) {
 		List<Employee> employees = getEmployeeList();
+		
+		 System.out.println("*** Before sorting Employees ***\n");
+		 printEmployeeList(employees);
 
 		// JAVA 8: Compare by Department, then First Name and then Last Name
 		Comparator<Employee> compareByName = Comparator
 				.comparing(Employee::getDepartment)
 				.thenComparing(Employee::getFirstName)
 				.thenComparing(Employee::getLastName);
+		
 
 		// Apply comparator on Collections.sort() method
 		Collections.sort(employees, compareByName);
 
 		// Print Employee data
+		System.out.println("\n*** After sorting Employees ***\n");
 		printEmployeeList(employees);
 	}
-	
-	
+
 	// Create and return static Employee
 	private static List<Employee> getEmployeeList() {
 		List<Employee> list = new ArrayList<>();
-		
+
 		list.add(new Employee(2, "Rohit", "Bhakare", "IT"));
 		list.add(new Employee(1, "Rahul", "Ghadge", "IT"));
 		list.add(new Employee(4, "Rajesh", "Khuntiya", "Support"));
@@ -34,7 +39,7 @@ public class ComparatorOnMultipleFields_Java8 {
 		list.add(new Employee(3, "Jaya", "Singh", "HR"));
 		list.add(new Employee(7, "Rajesh", "Khanna", "Support"));
 		list.add(new Employee(6, "Binay", "Gurun", "Management"));
-		
+
 		return list;
 	}
 
@@ -43,8 +48,6 @@ public class ComparatorOnMultipleFields_Java8 {
 		employees.forEach(System.out::print);
 	}
 }
-
-
 
 // Employee class
 class Employee {
@@ -96,8 +99,7 @@ class Employee {
 
 	@Override
 	public String toString() {
-		return "[Id=" + id + ", \tfirstName=" + firstName
-				+ ", \tlastName=" + lastName + ", \tdepartment=" + department
+		return "[Id=" + id + ", \tfirstName=" + firstName + ", \tlastName=" + lastName + ", \tdepartment=" + department
 				+ "]\n";
 	}
 }

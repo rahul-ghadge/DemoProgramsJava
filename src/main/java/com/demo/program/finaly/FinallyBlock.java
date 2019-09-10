@@ -1,4 +1,4 @@
-package com.demo.programs.finaly;
+package com.demo.program.finaly;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,4 @@
-package com.demo.programs.threads;
-
-
+package com.demo.program.thread;
 
 public class MainHelloWorldThread {
 

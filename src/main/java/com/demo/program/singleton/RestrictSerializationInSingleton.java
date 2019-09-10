@@ -1,8 +1,9 @@
-package com.demo.singleton;
+package com.demo.program.singleton;
 
 import java.io.Serializable;
 
-import test.com.demo.copy.DeepCopy;
+import com.demo.program.copy.DeepCopy;
+
 
 public class RestrictSerializationInSingleton {
 

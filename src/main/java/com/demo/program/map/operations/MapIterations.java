@@ -1,3 +1,4 @@
+package com.demo.program.map.operations;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -5,6 +6,7 @@ import java.util.Map;
 
 public class MapIterations {
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 
 		Map<Integer, String> customers = new HashMap<>();

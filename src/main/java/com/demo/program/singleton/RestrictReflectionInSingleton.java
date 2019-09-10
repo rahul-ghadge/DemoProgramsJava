@@ -1,4 +1,4 @@
-package com.demo.singleton;
+package com.demo.program.singleton;
 
 import java.lang.reflect.Constructor;
 
