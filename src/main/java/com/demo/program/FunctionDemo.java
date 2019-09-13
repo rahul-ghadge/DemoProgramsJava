@@ -10,7 +10,6 @@ public class FunctionDemo {
 
 		Function<SuperHero, String> superHeroName = (hero) -> hero.getName().toUpperCase();
 		
-		
 
 		// Super hero list
 		List<SuperHero> superHeros = new ArrayList<>();
@@ -53,11 +52,30 @@ public class FunctionDemo {
 		
 		
 		// Java 8
-		System.out.println("--------------");		
+		System.out.println("--------------");
 		superHeros
 				.stream()
 				.map(superHeroLength)
 				.forEach(count -> System.out.println("Length of name : " + count));
+		
+		
+		// Predicate to return same entity/identity
+		Function<SuperHero, SuperHero> superHero = Function.identity();
+		
+		
+		// Java 7
+		System.out.println("--------------");	
+		for (SuperHero hero : superHeros) {
+			System.out.println(superHero.apply(hero));
+		}
+		
+		
+		// Java 8
+		System.out.println("--------------");
+		superHeros
+				.stream()
+				.map(superHero)
+				.forEach(System.out::println);	
 
 	}
 
