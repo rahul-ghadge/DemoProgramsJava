@@ -16,7 +16,7 @@ public class PredicateDemo {
 		// Super hero list
 		List<SuperHero> superHeros = new ArrayList<>();
 
-		SuperHero hulk = new SuperHero("Bruce", "Hulk", "Doctore", 50, false);
+		SuperHero hulk = new SuperHero("Bruce", "Hulk", "Doctor", 50, false);
 		SuperHero capAmerica = new SuperHero("Steve", "Captain America", "Solder", 120, false);
 		SuperHero ironMan = new SuperHero("Tony", "Iron Man", "Business man", 45, true);
 		SuperHero spiderMan = new SuperHero("Peter", "Spider Man", "Student", 21, true);
@@ -28,6 +28,7 @@ public class PredicateDemo {
 		superHeros.add(spiderMan);
 
 		
+
 		// Java 7
 		for (SuperHero superHero : superHeros) {
 			// checking super hero criteria to join Avengers
@@ -35,15 +36,34 @@ public class PredicateDemo {
 				System.out.println(superHero.getName() + " can join Avengers.");
 		}
 
-		System.out.println("-----------------------");
 
 		// Java 8
+		System.out.println("-----------------------");
 		superHeros
 				.stream()
 				.filter(canJoinAvengers) // checking super hero criteria to join Avengers
 				.forEach(
 						hero -> System.out.println(hero.getName()
 								+ " can join Avengers."));
+		
+		
+		
+		// Predicate to recruit super hero who can fly and not too old 
+		// OR 
+		// is doctor who can help in Lab 
+		Predicate<SuperHero> isDoctor = hero -> hero.getProfession().equalsIgnoreCase("doctor");		
+		Predicate<SuperHero> canHelpInLab = canJoinAvengers.or(isDoctor);
+		
+		
+		// Java 7
+		System.out.println("-----------------------");
+		for (SuperHero superHero : superHeros) {
+			// checking super hero criteria to join Avengers
+			if (canHelpInLab.test(superHero))
+				System.out.println(superHero.getName() + " can join Avengers.");
+		}
+		
 	}
 
 }
+
