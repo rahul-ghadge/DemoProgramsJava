@@ -10,7 +10,7 @@ public class PredicateDemo {
 
 		
 		// Predicate to recruit super hero who can fly and not too old
-		Predicate<SuperHero> canJoinAvengers = hero -> hero.canFly && hero.age < 55;
+		Predicate<SuperHero> canJoinAvengers = hero -> hero.isCanFly() && hero.getAge() < 55;
 		
 		
 		// Super hero list
@@ -32,7 +32,7 @@ public class PredicateDemo {
 		for (SuperHero superHero : superHeros) {
 			// checking super hero criteria to join Avengers
 			if (canJoinAvengers.test(superHero))
-				System.out.println(superHero.name + " can join Avengers.");
+				System.out.println(superHero.getName() + " can join Avengers.");
 		}
 
 		System.out.println("-----------------------");
@@ -42,27 +42,8 @@ public class PredicateDemo {
 				.stream()
 				.filter(canJoinAvengers) // checking super hero criteria to join Avengers
 				.forEach(
-						hero -> System.out.println(hero.name
+						hero -> System.out.println(hero.getName()
 								+ " can join Avengers."));
 	}
 
-}
-
-class SuperHero {
-
-	String name;
-	String superName;
-	String profession;
-	int age;
-	boolean canFly;
-
-	public SuperHero(String name, String superName, String profession, int age,
-			boolean canFly) {
-		super();
-		this.name = name;
-		this.superName = superName;
-		this.profession = profession;
-		this.age = age;
-		this.canFly = canFly;
-	}
 }
