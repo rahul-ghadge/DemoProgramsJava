@@ -1,4 +1,4 @@
-package com.demo.program.reccursive;
+package com.demo.program.reccursion;
 
 public class ReverseString {
 

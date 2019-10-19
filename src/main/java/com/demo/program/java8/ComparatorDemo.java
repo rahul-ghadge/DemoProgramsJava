@@ -1,4 +1,4 @@
-package com.demo.program.java8
+package com.demo.program.java8;
 
 import java.util.ArrayList;
 import java.util.Collections;

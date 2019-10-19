@@ -8,8 +8,7 @@ public class SuperHero {
 	private int age;
 	private boolean canFly;
 
-	public SuperHero(String name, String superName, String profession, int age,
-			boolean canFly) {
+	public SuperHero(String name, String superName, String profession, int age, boolean canFly) {
 		super();
 		this.name = name;
 		this.superName = superName;
@@ -60,7 +59,7 @@ public class SuperHero {
 
 	@Override
 	public String toString() {
-		return "SuperHero [name=" + name + ", superName=" + superName
+		return "\nSuperHero [name=" + name + ", superName=" + superName
 				+ ", profession=" + profession + ", age=" + age + ", canFly="
 				+ canFly + "]";
 	}

@@ -1,11 +1,11 @@
-package com.demo.program.reccursive;
+package com.demo.program.reccursion;
 
-public class FactorialReccursive {
+public class FactorialRecursive {
 
     public static void main(String[] args) {
         System.out.println(fact(4));
         System.out.println(factOptimized(5));
-        System.out.println(factorial(4));
+        System.out.println(factorial(5, 1));
     }
 
 
