@@ -4,27 +4,31 @@ import java.util.Arrays;
 
 public class MyInsertionSort {
 
-    public static void main(String a[]) {
-        doInsertionSort(new int[]{10, 34, 2, 56, 7, 67, 88, 42});
-    }
+   public static void main(String args[]) {
+		int arr[] = { 100, 20, 15, 30, 5, 75 };
+		insertionSort(arr);
+	}
 
-    public static void doInsertionSort(int[] input) {
+	public static void insertionSort(int arr[]) {
+		for (int i = 1; i < arr.length; i++) {
+			int valueToSort = arr[i];
+			int j;
+			// If we get smaller value than valueToSort then, we stop at that index
+			for (j = i; j > 0 && arr[j - 1] > valueToSort; j--) {
+				arr[j] = arr[j - 1];
+			}
 
+			// We will put valueToSort at that index
+			arr[j] = valueToSort;
+			System.out.print("Iteration " + (i) + ": ");
+			printArray(arr);
+		}
+	}
 
-        for (int i = 1; i < input.length; i++) {
-
-            for (int j = i; j > 0; j--) {
-
-                if (input[j - 1] > input[j]) {
-                    int temp = input[j];
-                    input[j] = input[j - 1];
-                    input[j - 1] = temp;
-
-                }
-           }
-
-            System.out.println(Arrays.toString(input));
-        }
-    }
-
+	public static void printArray(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+	}
 }
