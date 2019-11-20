@@ -77,3 +77,9 @@ public class BFSGraph {
  * 	10	--->	30	-->		60
  *
  */
+
+
+// Output ::
+//
+//The BFS traversal of the graph is :
+//40 --> 10 --> 20 --> 30 --> 60 --> 50 --> 70 --> 
