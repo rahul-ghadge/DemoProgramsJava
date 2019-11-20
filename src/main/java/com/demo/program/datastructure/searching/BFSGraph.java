@@ -7,12 +7,7 @@ import java.util.Queue;
 
 public class BFSGraph {
 
-	private Queue<Node> queue;
-	static ArrayList<Node> nodes = new ArrayList<Node>();
-
-	public BFSGraph() {
-		queue = new LinkedList<Node>();
-	}
+	private Queue<Node> queue = new LinkedList<>();
 	
 	static class Node {
 		int data;
@@ -24,32 +19,24 @@ public class BFSGraph {
 			this.neighbours = new ArrayList<>();
 		}
 
-		public void addneighbours(Node neighbourNode) {
+		public void addNeighbour(Node neighbourNode) {
 			this.neighbours.add(neighbourNode);
-		}
-
-		public List<Node> getNeighbours() {
-			return neighbours;
-		}
-
-		public void setNeighbours(List<Node> neighbours) {
-			this.neighbours = neighbours;
 		}
 	}
 
 
-	public void bfs(Node node) {
-		queue.add(node);
-		node.visited = true;
+	public void bfs(Node parentNode) {
+		queue.add(parentNode);
+		parentNode.visited = true;
+		
 		while (!queue.isEmpty()) { 			// check queue is not empty
-			Node element = queue.remove(); 	// remove element from queue(FIFO)
+			Node element = queue.remove(); 		// remove element from queue(FIFO)
 			System.out.print(element.data + " --> ");
-			List<Node> neighbours = element.getNeighbours();
-			for (int i = 0; i < neighbours.size(); i++) {
-				Node n = neighbours.get(i);
-				if (n != null && !n.visited) {	// if node is not null and not
-					queue.add(n);				// visited then add in Queue
-					n.visited = true;			// and mark as visited true
+			
+			for (Node node : element.neighbours) {
+				if (null != node && !node.visited) {		// if node is not null and not
+					queue.add(node);			// visited then add in Queue
+					node.visited = true;			// and mark as visited true
 				}
 			}
 		}
@@ -75,6 +62,7 @@ public class BFSGraph {
 		node30.addneighbours(node60);	// directed edge form 30 to 60
 		node60.addneighbours(node70);	// directed edge form 60 to 70
 		node50.addneighbours(node70);	// directed edge form 50 to 70
+		
 		System.out.println("\nThe BFS traversal of the graph is :");
 		BFSGraph bfsGraph = new BFSGraph();
 		bfsGraph.bfs(node40);
@@ -83,9 +71,9 @@ public class BFSGraph {
 
 /*
  * 	40	--->	20	--->	50	\
- * 	|		  _/	|	\_			     \ -- >   70
- * 	|	  _/		|		\_		     / -- >
- * 	v  v-		  v			-v      /
- * 	10	--->	30	--->	60
+ * 	|		_/	|	\_			 \ -- >  70
+ * 	|	 _/		|		\_		 / -- >
+ * 	v v-		v			-v  /
+ * 	10	--->	30	-->		60
  *
  */
