@@ -1,4 +1,4 @@
-package com.demo.program.datastructure.shortestpath;
+package com.demo.program.datastructure.searching;
 
 import java.util.ArrayList;
 import java.util.HashMap;
