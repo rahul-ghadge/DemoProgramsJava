@@ -6,7 +6,8 @@ public class LoopInLinkedList {
     static Node head;
 
     // Driver program to test above functions
-    public static void main(String[] args) {
+    @SuppressWarnings("static-access")
+	public static void main(String[] args) {
         LoopInLinkedList list = new LoopInLinkedList();
         list.head = new Node(50);
         list.head.next = new Node(20);
@@ -47,7 +48,7 @@ public class LoopInLinkedList {
         Node ptr2 = null;
 
         ptr1 = startingNode;
-        while (1 == 1) {
+        while (true) {
 
             ptr2 = loop;
             while (ptr2.next != loop && ptr2.next != ptr1) {
