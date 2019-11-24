@@ -1,6 +1,5 @@
 package com.demo.program.datastructure.sorting;
 
-import java.util.Arrays;
 
 public class MyInsertionSort {
 

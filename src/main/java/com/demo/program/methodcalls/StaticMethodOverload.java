@@ -2,6 +2,7 @@ package com.demo.program.methodcalls;
 
 public class StaticMethodOverload {
 
+	@SuppressWarnings("static-access")
 	public static void main(String args[]) {
 
 		Parent p = new Parent();
