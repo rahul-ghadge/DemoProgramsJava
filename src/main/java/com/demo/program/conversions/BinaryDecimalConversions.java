@@ -15,18 +15,17 @@ public class BinaryDecimalConversions {
 		decimalToBinaryCustom(50);
 	}
 
-	// convert binary to decimal using Integers in-built method
+	// convert Binary to Decimal using Integers in-built method
 	private static void toDecimalParseInt(String binaryNum) {
 		System.out.println(binaryNum + "'s binary value : "
 				+ Integer.parseInt(binaryNum, 2));
 	}
 
 	
-	// convert binary to decimal using custom logic
+	// convert Binary to Decimal using custom logic
 	private static void toDecimalCustom(String binaryNum) {
 
 		int decimal = 0;
-		int i = 0;
 		int num;
 
 		try {
@@ -36,30 +35,24 @@ public class BinaryDecimalConversions {
 			return;
 		}
 
-		while (true) {
-
-			if (num == 0) {
-				break;
-			} else {
-				int temp = num % 10;
-				decimal += temp * Math.pow(2, i);
-				num /= 10;
-
-				i++;
-			}
+		for (int i = 0; num != 0; i++) {
+			int temp = num % 10;
+			decimal += temp * Math.pow(2, i);
+			num /= 10;
 		}
-		System.out.println(binaryNum + "'s decimal value : " + decimal);
+
+		System.out.println("--> " + binaryNum + "'s decimal value : " + decimal);
 	}
 	
 	
-	// convert decimal to binary using Integers in-built method
+	// convert Decimal to Binary using Integers in-built method
 	private static void DecimalToBinaryParseInt(int decimalNum) {
 		System.out.println(decimalNum + "'s binary value : "
 				+ Integer.toBinaryString(decimalNum));
 	}
 	
 	
-	// convert decimal to binary using custom logic
+	// convert Decimal to Binary using custom logic
 	private static void decimalToBinaryCustom(int decimalNum) {
 
 		List<Integer> list = new ArrayList<>();
