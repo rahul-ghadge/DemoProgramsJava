@@ -62,3 +62,11 @@ class SuperHero implements Cloneable {
         return super.clone();
     }
 }
+
+
+
+//	Output
+
+//	Before copy :: Weapon Manufacturer
+//	After copy Obj-1 :: Iron man's Suit designer
+//	After copy Obj-2:: Iron man's Suit designer
