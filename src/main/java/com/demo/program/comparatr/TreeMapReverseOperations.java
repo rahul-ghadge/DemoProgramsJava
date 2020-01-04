@@ -8,34 +8,34 @@ public class TreeMapReverseOperations {
 
 	public static void main(String[] args) {
 
-		Comparator<EmployeeModel> compareByMultiple = Comparator
-				.comparing(EmployeeModel::getDepartment, Comparator.reverseOrder())
-				.thenComparing(EmployeeModel::getName, Comparator.naturalOrder())
-				.thenComparing(EmployeeModel::getSalary, Comparator.reverseOrder());
+		Comparator<Employee> compareByMultiple = Comparator
+				.comparing(Employee::getDepartment, Comparator.reverseOrder())
+				.thenComparing(Employee::getFirstName, Comparator.naturalOrder())
+				.thenComparing(Employee::getSalary, Comparator.reverseOrder());
 				//.reversed(); // reverse order
 
 
-		TreeMap<EmployeeModel, String> employeeMapJava7 = new TreeMap<>(
-				new Comparator<EmployeeModel>() {
+		TreeMap<Employee, String> employeeMapJava7 = new TreeMap<>(
+				new Comparator<Employee>() {
 					@Override
-					public int compare(EmployeeModel e1, EmployeeModel e2) {
+					public int compare(Employee e1, Employee e2) {
 						// sort using name in desending order
-						return e2.getName().compareTo(e1.getName());
+						return e2.getFirstName().compareTo(e1.getFirstName());
 						// sort using id in desending order
 						// return e2.getId()-e1.getId();
 					}
 				});
 
-		employeeMapJava7.put(new EmployeeModel(0, "Rohit", "Software", 10), "Rohit");
-		employeeMapJava7.put(new EmployeeModel(10, "rahul", "Software", 5), "rahul");
-		employeeMapJava7.put(new EmployeeModel(7, "Vaibhav", "Software", 10), "Vaibhav");
-		employeeMapJava7.put(new EmployeeModel(1, "Ganesh", "Management", 5), "Ganesh");
-		employeeMapJava7.put(new EmployeeModel(5, "Binay", "Architect", 20), "Binay");
-		employeeMapJava7.put(new EmployeeModel(2, "bindu", "Marketing", 7), "binay");
+		employeeMapJava7.put(new Employee(0, "Rohit", "Bhakare", "Software", 10.0f), "Rohit");
+		employeeMapJava7.put(new Employee(10, "rahul", "ghadage", "Software", 5.0f), "rahul");
+		employeeMapJava7.put(new Employee(7, "Vaibhav", "Shrivastava", "Software", 10.0f), "Vaibhav");
+		employeeMapJava7.put(new Employee(1, "Ganesh", "Badar", "Management", 5.0f), "Ganesh");
+		employeeMapJava7.put(new Employee(5, "Binay", "Gurung", "Architect", 20.0f), "Binay");
+		employeeMapJava7.put(new Employee(2, "bindu", "gurung",  "Marketing", 7.0f), "binay");
 
 		
 		
-		TreeMap<EmployeeModel, String> employeeMapJava8 = new TreeMap<>(compareByMultiple);
+		TreeMap<Employee, String> employeeMapJava8 = new TreeMap<>(compareByMultiple);
 		employeeMapJava8.putAll(employeeMapJava7);
 		
 		// Printing the TreeMap (The keys will be sorted based on the supplied comparator)

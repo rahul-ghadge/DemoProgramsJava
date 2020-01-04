@@ -56,7 +56,7 @@ public class BFSShortestPath {
 			Node currentNode = tempNodes.get(0);		// get first node from temp list
 			for (Node neightbourNode : currentNode.neighbourNodes) {
 
-				// if node is not visted and not present in parent nodes
+				// if node is not visited and not present in parent nodes
 				if (null != neightbourNode
 						&& !parentNodes.containsKey(neightbourNode.nodeName)	// node should not present in parent nodes map
 						&& !neightbourNode.visisted) {							// node is not visited yet

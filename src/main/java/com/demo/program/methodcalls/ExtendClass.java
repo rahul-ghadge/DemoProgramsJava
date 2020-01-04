@@ -57,5 +57,17 @@ class C extends B {
 	public void print() {
 		System.out.println("C print");
 	}
-
 }
+
+/*
+  
+//  Output
+---------------------------
+A print
+B print
+C print
+----------------------
+C print
+C print
+
+*/

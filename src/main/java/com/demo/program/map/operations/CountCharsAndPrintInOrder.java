@@ -28,7 +28,7 @@ public class CountCharsAndPrintInOrder {
 		map
 		.entrySet()
 		.stream()
-		.sorted((v1, v2) -> v2.getValue() - v1.getValue()) // for decending order by values
+		.sorted((v1, v2) -> v2.getValue() - v1.getValue()) // for descending order by values
 		//.sorted((v1, v2) -> v1.getValue() - v1.getValue()) // for ascending order by values
 		//.sorted(Map.Entry.comparingByValue()) // for ascending order by values
 		.collect(
