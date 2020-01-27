@@ -18,51 +18,45 @@ public class MaxRepeatativeLetter {
 	
 	@SuppressWarnings("rawtypes")
 	public static String repeatativeCount(String myString) {
-		
-		int currentLargestCount = 0;
-		String currentBestWord = "";
-		
-		Map<String, Integer> characterCount = new HashMap<String, Integer>();
-		String[] words = myString.split("\\s+");
-		
-		for (int i = 0; i < words.length; i++) {
-			
-			String word = words[i];
-			characterCount = new HashMap<String, Integer>();
-			
+
+		int largestCount = 0;
+		String largestCountWord = "";
+
+		String[] wordsArr = myString.split("\\s+"); // myString.split(" ");
+
+		for (int i = 0; i < wordsArr.length; i++) {
+
+			String word = wordsArr[i];
+			Map<String, Integer> map = new HashMap<>();
+
 			for (int j = 0; j < word.length(); j++) {
-				
-				String character = Character.toString(word.charAt(j));
-				
-				if (characterCount.containsKey(character)) {
-					characterCount.put(character, characterCount.get(character) + 1);
+
+				String ch = Character.toString(word.charAt(j));
+
+				if (map.containsKey(ch)) {
+					map.put(ch, map.get(ch) + 1);
 				} else {
-					characterCount.put(character, 1);
+					map.put(ch, 1);
 				}
 			}
-			
-			
-			Iterator ir = characterCount.values().iterator();
-			int thiscount = 0;
-			while (ir.hasNext()) {
-				int thischaractercount = (int) ir.next();
-				
-				if (thiscount < thischaractercount)
-					thiscount = thischaractercount;
-				
-			}
-			if (thiscount > currentLargestCount) {
-				currentLargestCount = thiscount;
-				currentBestWord = word;
-				
-				//System.out.println("Count :: " + currentLargestCount);
-				//System.out.println("Word :: " + currentBestWord);
 
-			} else if (currentLargestCount == 1) {
-				currentBestWord = "-1";
-			}			
+			Iterator it = map.values().iterator();
+			while (it.hasNext()) {
+				int currentCount = (int) it.next();
+				
+				if (currentCount > largestCount) {
+					largestCount = currentCount;
+					largestCountWord = word;
+					
+					// System.out.println("Count :: " + currentLargestCount);
+					// System.out.println("Word :: " + currentBestWord);
+				
+				} else if (largestCount == 1) {
+					largestCountWord = "-1";
+				}
+			}
 		}
-		return currentBestWord;		
+		return largestCountWord;
 	}
 }
 
