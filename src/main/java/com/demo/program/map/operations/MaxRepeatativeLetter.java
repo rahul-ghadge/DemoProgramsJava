@@ -48,8 +48,8 @@ public class MaxRepeatativeLetter {
 					largestCount = currentCount;
 					largestCountWord = word;
 					
-					// System.out.println("Count :: " + currentLargestCount);
-					// System.out.println("Word :: " + currentBestWord);
+					//System.out.println("Count :: " + currentCount);
+					//System.out.println("Word :: " + largestCountWord);
 				
 				} else if (largestCount == 1) {
 					largestCountWord = "-1";
