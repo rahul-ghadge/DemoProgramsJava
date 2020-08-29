@@ -4,24 +4,24 @@ public class Palindrome {
 
 	public static void main(String[] args) {
 
-		new Palindrome().checkPalindrom("level");
-		new Palindrome().checkPalindrom("test");
-		new Palindrome().checkPalindromStringBuffer("nitin");
-		new Palindrome().checkPalindromStringBuffer("jay");
-		new Palindrome().checkPalindromReverse("madam");
-		new Palindrome().checkPalindromReverse("sir");
+		new Palindrome().checkPalindrome("level");
+		new Palindrome().checkPalindrome("test");
+		new Palindrome().checkPalindromeStringBuffer("nitin");
+		new Palindrome().checkPalindromeStringBuffer("jay");
+		new Palindrome().checkPalindromeReverse("madam");
+		new Palindrome().checkPalindromeReverse("sir");
 		
 	}
 	
-	public void checkPalindrom(String str) {
+	public void checkPalindrome(String str) {
 		int start = 0;
 		int end = str.length() - 1;
 		while (start <= end) {
 			if (start == end)
-				System.out.println(str + " is palindrom");
+				System.out.println(str + " is palindrome");
 			
 			if (str.charAt(start) != str.charAt(end)) {
-				System.out.println(str + " is not palindrom");
+				System.out.println(str + " is not palindrome");
 				break;
 			}			
 			start++;
@@ -30,26 +30,26 @@ public class Palindrome {
 	}
 	
 	
-	public void checkPalindromStringBuffer(String str) {
+	public void checkPalindromeStringBuffer(String str) {
 		if (str.equals(new StringBuffer(str).reverse().toString()))
-			System.out.println(str + " is palindrom");
+			System.out.println(str + " is palindrome");
 		else
-			System.out.println(str + " is not palindrom");
+			System.out.println(str + " is not palindrome");
 	}
 	
 	
 	
-	public void checkPalindromReverse(String str) {
+	public void checkPalindromeReverse(String str) {
 		
-		String rev = "";
+		StringBuilder rev = new StringBuilder();
 		
 		for (int i = str.length() -1 ; i >= 0 ; i--) {
-			rev += str.charAt(i);			
+			rev.append(str.charAt(i));
 		}
 		
-		if (rev.equals(str)) 
-			System.out.println(str + " is palindrom");
+		if (rev.toString().equals(str))
+			System.out.println(str + " is palindrome");
 		else
-			System.out.println(str + " is not palindrom");
+			System.out.println(str + " is not palindrome");
 	}
 }

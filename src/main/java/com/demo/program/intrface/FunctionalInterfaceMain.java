@@ -15,18 +15,18 @@ public class FunctionalInterfaceMain {
 		names.add("josH");
 		names.add("jose");
 		names.add("jonh");
-		
 
-		CaptitalizeName capotalizeName = (s) -> s.substring(0,1).toUpperCase()
+
+		CapitalizeName capitalizeName = (s) -> s.substring(0,1).toUpperCase()
 				+ s.substring(1).toLowerCase();
 
 		for (String name : names) {
-			System.out.println(capotalizeName.capitalize(name));
+			System.out.println(capitalizeName.capitalize(name));
 		}
 	}
 }
 
 @FunctionalInterface
-interface CaptitalizeName {
+interface CapitalizeName {
 	String capitalize(String name);
 }
