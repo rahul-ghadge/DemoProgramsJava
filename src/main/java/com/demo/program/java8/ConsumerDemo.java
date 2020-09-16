@@ -25,9 +25,28 @@ public class ConsumerDemo {
 		
 		
 		
-		Consumer<String> StringConsumer = (name) -> System.out.println(name + " is awesome");
-		StringConsumer.accept("Tony");
+		Consumer<String> stringConsumer = (name) -> System.out.println(name + " is awesome");
+		stringConsumer.accept("Tony");
+
+
+		// Consumer chaining
+		Consumer<String> upperCaseConsumer = (str) -> System.out.println(str.toUpperCase() + " in uppercase");
+		stringConsumer.andThen(upperCaseConsumer).accept("tony");
 		
 	}
 
 }
+
+
+
+
+
+
+//		---------------------------------------------------------------
+//		Output
+//		---------------------------------------------------------------
+//		SuperHero [name=Wade, superName=Deadpool, profession=Street fighter, age=28, canFly=true]
+//		Wed Sep 16 12:15:26 IST 2020
+//		Tony is awesome
+//		tony is awesome
+//		TONY in uppercase

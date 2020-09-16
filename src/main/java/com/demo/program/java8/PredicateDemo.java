@@ -14,7 +14,7 @@ public class PredicateDemo {
 		
 		
 		// Super hero list
-		List<SuperHero> superHeros = new ArrayList<>();
+		List<SuperHero> superHeroes = new ArrayList<>();
 
 		SuperHero hulk = new SuperHero("Bruce", "Hulk", "Doctor", 50, false);
 		SuperHero capAmerica = new SuperHero("Steve", "Captain America", "Solder", 120, false);
@@ -22,15 +22,15 @@ public class PredicateDemo {
 		SuperHero spiderMan = new SuperHero("Peter", "Spider Man", "Student", 21, true);
 
 		// adding all super hero into list
-		superHeros.add(hulk);
-		superHeros.add(capAmerica);
-		superHeros.add(ironMan);
-		superHeros.add(spiderMan);
+		superHeroes.add(hulk);
+		superHeroes.add(capAmerica);
+		superHeroes.add(ironMan);
+		superHeroes.add(spiderMan);
 
 		
 
 		// Java 7
-		for (SuperHero superHero : superHeros) {
+		for (SuperHero superHero : superHeroes) {
 			// checking super hero criteria to join Avengers
 			if (canJoinAvengers.test(superHero))
 				System.out.println(superHero.getName() + " can join Avengers.");
@@ -39,12 +39,10 @@ public class PredicateDemo {
 
 		// Java 8
 		System.out.println("-----------------------");
-		superHeros
+		superHeroes
 				.stream()
 				.filter(canJoinAvengers) // checking super hero criteria to join Avengers
-				.forEach(
-						hero -> System.out.println(hero.getName()
-								+ " can join Avengers."));
+				.forEach(hero -> System.out.println(hero.getName() + " can join Avengers."));
 		
 		
 		
@@ -57,7 +55,7 @@ public class PredicateDemo {
 		
 		// Java 7
 		System.out.println("-----------------------");
-		for (SuperHero superHero : superHeros) {
+		for (SuperHero superHero : superHeroes) {
 			// checking super hero criteria to join Avengers
 			if (canHelpInLab.test(superHero))
 				System.out.println(superHero.getName() + " can join Avengers.");
