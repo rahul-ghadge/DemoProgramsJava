@@ -65,3 +65,21 @@ public class PredicateDemo {
 
 }
 
+
+
+
+
+
+
+//		---------------------------------------------------------------
+//		Output
+//		---------------------------------------------------------------
+//		Tony can join Avengers.
+//		Peter can join Avengers.
+//		-----------------------
+//		Tony can join Avengers.
+//		Peter can join Avengers.
+//		-----------------------
+//		Bruce can join Avengers.
+//		Tony can join Avengers.
+//		Peter can join Avengers.

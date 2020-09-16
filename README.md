@@ -42,6 +42,7 @@ Here all related codes are places in respective packages listed below.
 - Java 8 Features 
     - [Functional Interfaces](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
     - BiConsumer
+    - BiFunction
     - BiPredicate
     - Comparator
     - Consumer
