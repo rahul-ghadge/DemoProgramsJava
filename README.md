@@ -8,8 +8,8 @@ Here all related codes are places in respective packages listed below.
     - Array of Combination (Number)
     - String Combination
 - Comparator
-    - Comaprator on Multiple Fields (Java 7)
-    - Comaprator on Multiple Fields (Java 8)
+    - Comparator on Multiple Fields (Java 7)
+    - Comparator on Multiple Fields (Java 8)
 - Conversions
 - Copy
     - Deep Copy
@@ -39,7 +39,10 @@ Here all related codes are places in respective packages listed below.
 - Image Compression
 - Immutable
 - Interface - Functional Interface
-- Java 8 Features
+- Java 8 Features 
+    - ![Functional Interfaces](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
+    - BiConsumer
+    - BiPredicate
     - Comparator
     - Consumer
     - Custom Functional Interface
