@@ -59,7 +59,7 @@ public class SuperHero {
 
 	@Override
 	public String toString() {
-		return "\nSuperHero [name=" + name + ", superName=" + superName
+		return "SuperHero [name=" + name + ", superName=" + superName
 				+ ", profession=" + profession + ", age=" + age + ", canFly="
 				+ canFly + "]";
 	}

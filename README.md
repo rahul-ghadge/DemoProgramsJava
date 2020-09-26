@@ -44,11 +44,13 @@ Here all related codes are places in respective packages listed below.
     - BiConsumer
     - BiFunction
     - BiPredicate
+    - Collectors utility class
     - Comparator
     - Consumer
     - Custom Functional Interface
     - Functions
     - Map Reduce
+    - Method Reference
     - Predicates
     - Streams
     - Suppliers
