@@ -52,6 +52,7 @@ Here all related codes are places in respective packages listed below.
     - Map Reduce
     - Method Reference
     - Predicates
+    - Sequential and Parallel Streams
     - Streams
     - Suppliers
 - List Operations
