@@ -4,113 +4,118 @@ Topics: Core java, Collection, Multi threading, Data Structure, Generics, Java8 
 Here all related codes are places in respective packages listed below.  
  
 ## Topics Covered per package  
-- Combination
-    - Array of Combination (Number)
-    - String Combination
-- Comparator
-    - Comparator on Multiple Fields (Java 7)
-    - Comparator on Multiple Fields (Java 8)
-- Conversions
-- Copy
-    - Deep Copy
-    - Deep Copy using CLone method
-    - Shallow Copy
-- Data Structure
-    - Searching
-        - BFS (Breath First Search) Graph
-        - BFS (Breath First Search) Shortest Path Graph
-        - DFS (Depth First Search) Graph
-    - Sorting
-        - Bubble Sort
-        - Insertion Sort
-        - Selection Sort
-    - Binary Tree Depth
-    - Detect Loop in Linked List
-    - Detect and Remove Loop in Linked List
-    - LRU (Last Recently Used) Cache
-    - Find Value in Binary Tree
-- Elevator program
-- Finally Block
-- Generics
-    - Lower Bounded Wildcards
-    - Unbounded Wildcards
-    - Upper Bounded Wildcards
-- Hash and Equals
-- Image Compression
-- Immutable
-- Interface - Functional Interface
-- Java 8 Features 
+- [Combination](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/combination)
+    - [Array of Combination (Number)](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/NumArrayCombination.java)
+    - [String Combination](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/StringCombinations.java)
+- [Comparator](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/comparatr)
+    - [Comparator Demo](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/comparatr/ComparatorDemo.java)
+    - [Comparator on Multiple Fields (Java 7)](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/comparatr/ComparatorOnMultipleFields_Java7.java)
+    - [Comparator on Multiple Fields (Java 8)](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/comparatr/ComparatorOnMultipleFields_Java8.java)
+    - [HashMap Sorting](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/comparatr/HashMapSorting.java)
+    - [TreeMap reverse operations](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/comparatr/TreeMapReverseOperations.java)
+- [Conversions](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/conversions/BinaryDecimalConversions.java)
+- [Copy](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/copy)
+    - [Deep Copy](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/copy/DeepCopy.java)
+    - [Deep Copy using CLone method](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/copy/DeepCopyUsingClone.java)
+    - [Shallow Copy](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/copy/ShalowCopy.java)
+- [Data Structure](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure)
+    - [Searching](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/searching)
+        - [BFS (Breath First Search) Graph](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/searching/BFSGraph.java)
+        - [BFS (Breath First Search) Shortest Path Graph](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/searching/BFSShortestPath.java)
+        - [DFS (Depth First Search) Graph](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/searching/DFSGraph.java)
+    - [Sorting](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/sorting)
+        - [Bubble Sort](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/sorting/MyBubbleSort.java)
+        - [Insertion Sort](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/sorting/MyInsertionSort.java)
+        - [Selection Sort](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/sorting/MySelectionSort.java)
+    - [Binary Tree Depth](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/BinaryTreeDepth.java)
+    - [Detect Loop in Linked List](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/DetectLoopInLinkedList.java)
+    - [Detect and Remove Loop in Linked List](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/datastructure/LoopInLinkedList.java)
+    - [LRU (Last Recently Used) Cache](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/LRUCache.java)
+    - [Find Value in Binary Tree](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/ValueInBinaryTree.java)
+- [Elevator program](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/elevator)
+- [Finally Block](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/finaly/FinallyBlock.java)
+- [Generics](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/generics)
+    - [Lower Bounded Wildcards](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/generics/LowerBoundedWildcards.java)
+    - [Unbounded Wildcards](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/generics/UnboundedWildcards.java)
+    - [Upper Bounded Wildcards](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/generics/UpperBoundedWildcards.java)
+- [Hash and Equals](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/hashequals)
+- [Image Compression](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/img/compress)
+- [Immutable](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/immutable/FinalClassExample.java)
+- [Interface - Functional Interface](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/intrface)
+- [Java 8 Features](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/java8) 
     - [Functional Interfaces](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
-    - BiConsumer
-    - BiFunction
-    - BiPredicate
-    - Collectors utility class
-    - Comparator
-    - Consumer
-    - Custom Functional Interface
-    - Functions
-    - Map Reduce
-    - Method Reference
-    - Predicates
-    - Sequential and Parallel Streams
-    - Streams
-    - Suppliers
-- List Operations
-    - Find Missing Elements from Duplicate List
-    - Remove Duplicate Elements from List  
-- Map Operations
-    - Count Chars and Print in Order as per Count
-    - Iterate Maps using Java 7 and Java 8
-    - Max Repetitive Letter from String 
-- Method Calls
-    - Method Calls on Overloaded Classes with Extending
-    - Static method calls by Extending
-- Numbers Operations
-    - N Prime Numbers
-    - Sum of Numbers
-- Overriding
-    - Overriding methods
-    - Overriding Rules while Extending Classes
-- Palindrome
-    - Array of Numbers Palindrome
-    - String Palindrome with Multiple Techniques
-- Pattern programs
-    - Christmas Tree using Stars (*)
-- Permutation
-    - Permutation using Recursion and Swapping
-    - Permutation using Substring
-- Recursion
-    - Biggest in Array
-    - Factorial
-    - Fibonacci Series
-    - Reverse String
-- Reflection
-    - Get Class's Public and Private Fields
-    - Get Class Information
-    - Get Class's Public and Private Methods
-- Runtime Package
-    - Garbage Collection
-    - Log Monitor
-    - Run Commands using Java
-- Singleton Prevention
-    - Restrict Singleton from Cloning
-    - Restrict Singleton from Reflection
-    - Restrict Singleton from Serialization
+    - [BiConsumer](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/BiConsumerDemo.java)
+    - [BiFunction](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/BiFunctionDemo.java)
+    - [BiPredicate](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/BiPredicateDemo.java)
+    - [Collectors utility class](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/CollectorsDemo.java)
+    - [Comparator](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/ComparatorDemo.java)
+    - [Consumer](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/ConsumerDemo.java)
+    - [Custom Functional Interface with default & static methods](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/FunctionalInterfaceImplementation.java)
+    - [Functions](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/FunctionDemo.java)
+    - [Map Reduce](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/MapReduce.java)
+    - [Method Reference](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/MethodReferenceDemo.java)
+    - [Predicates](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/PredicateDemo.java)
+    - [Sequential and Parallel Streams](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/SequentialParallelDemo.java)
+    - [Streams](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/StreamDemo.java)
+    - [Suppliers](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/SupplierDemo.java)
+- [List Operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/list/operations)
+    - [Find Missing Elements from Duplicate List](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/list/operations/FindMissingElementFromDuplicateList.java)
+    - [Remove Duplicate Elements from List](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/list/operations/RemoveDuplicateFromList.java)  
+- [Map Operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/map/operations)
+    - [Count Chars and Print in Order as per Count](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/map/operations/CountCharsAndPrintInOrder.java)
+    - [Iterate Maps using Java 7 and Java 8](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/map/operations/MapIterations.java)
+    - [Max Repetitive Letter from String](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/map/operations/MaxRepeatativeLetter.java) 
+- [Method Calls](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/methodcalls)
+    - [Method Calls on Overloaded Classes with Extending](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/methodcalls/ExtendClass.java)
+    - [Integer wrapper and primitive method calls](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/methodcalls/IntegerTest.java)
+    - [Static method calls by Extending](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/methodcalls/StaticMethodOverload.java)
+- [Numbers Operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/numbers)
+    - [N Prime Numbers](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/numbers/NPrimeNumber.java)
+    - [Sum of Numbers](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/numbers/SumOfNumbers.java)
+- [Overriding](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/overriding)
+    - [Overriding methods](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/overriding/MethodCallTest.java)
+    - [Overriding Rules while Extending Classes](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/overriding/SuperClass.java)
+- [Palindrome](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/palindrome)
+    - [Array of Numbers Palindrome](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/palindrome/ArrayPalindrome.java)
+    - [String Palindrome with Multiple Techniques](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/palindrome/Palindrome.java)
+- [Pattern programs](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/pattern)
+    - [Christmas Tree using Stars (*)](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/pattern/ChristmasTree.java)
+- [Permutation](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/permutation)
+    - [Permutation using Recursion and Swapping](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/permutation/Permutation.java)
+    - [Permutation using Substring](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/permutation/PermutationUsingSubString.java)
+- [Recursion](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reccursion)
+    - [Biggest in Array](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reccursion/BiggestInArray.java)
+    - [Factorial](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reccursion/FactorialRecursive.java)
+    - [Fibonacci Series](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reccursion/FibonacciInRecursion.java)
+    - [Reverse String](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reccursion/ReverseString.java)
+- [Reflection](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reflection)
+    - [Get Class's Public and Private Fields](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reflection/GetClassFields.java)
+    - [Get Class Information](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reflection/GetClassInfo.java)
+    - [Get Class's Public and Private Methods](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/reflection/GetClassMethods.java)
+- [Runtime Package](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/runtime)
+    - [Garbage Collection](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/runtime/GarbageCollectionDemo.java)
+    - [Log Monitor](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/runtime/LogMonitor.java)
+    - [Run Commands using Java](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/runtime/RuntimeExe.java)
+- [Singleton Prevention](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/singleton)
+    - [Restrict Singleton from Cloning](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/singleton/RestrictCloneInSingleton.java)
+    - [Restrict Singleton from Reflection](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/singleton/RestrictReflectionInSingleton.java)
+    - [Restrict Singleton from Serialization](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/singleton/RestrictSerializationInSingleton.java)
 - Store SQL
-    - Run SQL Script on Oracle DB
-- Multi-threading
-    - Blocking Queue
-    - Hello World Printing from 2 Different Threads
-    - Java Atomic Integer
-    - Join in Thread
-    - Producer and Consumer using Synchronized Blocks
-    - Producer and Consumer using Locks
-    - Return/Get Value from Thread
-    - Return/Get Value from Thread using Callable Interface
-    - Sum of Numbers Range using Executor Framework
-    - Synchronized method test
-    - Thread Groups
-    - Wait and Notify 
+    - [Run SQL Script on Oracle DB](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/store/sql)
+- [Multi-threading](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread)
+    - [Blocking Queue](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/threadBlockingQueueDemo.java)
+    - [Hello World Printing(100 times) from 2 Different Threads](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/HelloWorldPrint.java)
+    - [Java Atomic Integer](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/JavaAtomic.java)
+    - [Join in Thread](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/JoinTest.java)
+    - [Hello World Printing from 2 Different Threads](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/MainHelloWorldThread.java.java)
+    - [Producer and Consumer using Synchronized Blocks](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/ProducerConsumer.java)
+    - [Producer and Consumer using Locks](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/ProducerConsumerLock.java)
+    - [Return/Get Value from Thread](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/ReturnValue.java)
+    - [Return/Get Value from Thread using Callable Interface](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/ReturnValueFromCollable.java)
+    - [Sum of Numbers Range using Executor Framework](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/RunnableSumOfRange.java)
+    - [Synchronized method test](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/SynchronizedTest.java)
+    - [Thread Groups](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/ThreadGroupDemo.java)
+    - [Wait and Notify](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/WaitNotifyTest.java)
 
 
 #### More topics coming soon.
