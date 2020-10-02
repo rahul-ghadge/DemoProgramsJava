@@ -1,12 +1,14 @@
 package com.demo.program.reccursion;
+import java.util.Scanner;
 
 public class FibonacciInRecursion {
 
 	public static void main(String[] args) {
-		int num = 10;
-		
+	    System.out.println("Enter the number for the fibonacci sequence");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
 		for (int i = 0; i < num; i++) {
-			System.out.println((i + 1) + "'th Fabonacci No : " + fibonacci(i));
+			System.out.println((i + 1) + "'the Fibonacci No : " + fibonacci(i));
 		}
 	}
 	
@@ -22,3 +24,4 @@ public class FibonacciInRecursion {
 			return fibonacci(n - 1) + fibonacci(n - 2);
 	}
 }
+
