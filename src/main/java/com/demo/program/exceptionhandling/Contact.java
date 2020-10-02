@@ -28,19 +28,19 @@ public class Contact {
 		
 		String emailPattern = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
 		
-		if(this.firstName.equalsIgnoreCase("") || this.firstName == null){
+		if(this.firstName == null || this.firstName.equalsIgnoreCase("")){
 			throw new MandatoryAttributeException();
 		}
 		
-		else if(this.lastName.equalsIgnoreCase("") || this.lastName == null){
+		else if(this.lastName == null || this.lastName.equalsIgnoreCase("") ){
 			throw new MandatoryAttributeException();
 		}
 		
-		else if(this.dateOfBirth.equalsIgnoreCase("") || this.dateOfBirth == null){
+		else if(this.dateOfBirth == null || this.dateOfBirth.equalsIgnoreCase("")){
 			throw new MandatoryAttributeException();
 		}
 		
-		else if(this.email.equalsIgnoreCase("") || this.email == null){
+		else if(this.email == null || this.email.equalsIgnoreCase("")){
 			throw new MandatoryAttributeException();
 		}
 		
@@ -57,10 +57,10 @@ public class Contact {
 	
 	public static void main(String[] args) {	
 
-		Contact contact = new Contact("palak.rathi.com","Palak","","09 May 1998","987654763","98765432");
+		Contact contact = new Contact("palak.rathi.com","Palak","","15 May 1994","987654763","98765432");
 		Stack stack = new Stack();
 		
-		Contact contact1 = new Contact("ssakshi.com","Sakshi","","12 April 1998","987654763","98765432");
+		Contact contact1 = new Contact("ssakshi.com","Sakshi","","23 April 1994","987654763","98765432");
 		
 		try {
 			
