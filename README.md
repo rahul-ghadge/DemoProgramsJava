@@ -103,7 +103,9 @@ Here all related codes are places in respective packages listed below.
 - Store SQL
     - [Run SQL Script on Oracle DB](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/store/sql)
 - [Multi-threading](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread)
-    - [Blocking Queue](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/threadBlockingQueueDemo.java)
+    - [Blocking Queue](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/BlockingQueueDemo.java)
+    - [Countdown Latch](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/CountdownLatchDemo.java)
+    - [Cyclic Barrier ](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/CyclicBarrierDemo.java)
     - [Hello World Printing(100 times) from 2 Different Threads](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/HelloWorldPrint.java)
     - [Java Atomic Integer](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/JavaAtomic.java)
     - [Join in Thread](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/JoinTest.java)
