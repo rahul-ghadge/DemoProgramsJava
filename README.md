@@ -3,7 +3,9 @@ In this repository all Core Java related programs are added, which are mostly tr
 Topics: Core java, Collection, Multi threading, Data Structure, Generics, Java8 features, Streams, Functional Interfaces, Reflection, Recursion, Comparator related interview programs.
 Here all related codes are places in respective packages listed below.  
  
-## Topics Covered per package  
+## Topics Covered per package 
+- [API call](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api)  
+    - [Rest API consumer](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api/RestConsumer.java)
 - [Combination](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/combination)
     - [Array of Combination (Number)](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/NumArrayCombination.java)
     - [String Combination](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/StringCombinations.java)
