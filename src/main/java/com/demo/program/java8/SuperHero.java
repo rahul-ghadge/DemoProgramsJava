@@ -8,6 +8,8 @@ public class SuperHero {
 	private int age;
 	private boolean canFly;
 
+	public SuperHero() {}
+
 	public SuperHero(String name, String superName, String profession, int age, boolean canFly) {
 		super();
 		this.name = name;
