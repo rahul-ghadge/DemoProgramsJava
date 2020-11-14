@@ -1,4 +1,4 @@
-package filehandling;
+package com.demo.program.filehandling;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -22,14 +22,15 @@ public class FileCopy {
 	{		
 		
 		byte[] buffer = new byte[2000];
-		int bytes=0;
 		try 
 		{
 			BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(fileName1));
 			BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(fileName2));
 			
+			int bytes;
+
 			while((bytes = inputStream.read(buffer)) != -1) {
-				outputStream.write(buffer);
+				outputStream.write(bytes);
 			}
 			
 			System.out.println("Data copied from File1.txt to File2.txt");

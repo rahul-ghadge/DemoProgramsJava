@@ -1,4 +1,4 @@
-package filehandling;
+package com.demo.program.filehandling;
 
 import java.io.File;
 import java.util.HashMap;

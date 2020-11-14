@@ -1,4 +1,4 @@
-package filehandling;
+package com.demo.program.filehandling;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -39,10 +39,9 @@ public class MovieData
 	}
 	
 	
-	@SuppressWarnings("unlikely-arg-type")
+	@SuppressWarnings("resource")
 	public static List<Movie> readMovieData(String filename){
 	
-		int count_words=0;
 		FileReader f;
 		String lines="";
 		Movie.Language language=null;		

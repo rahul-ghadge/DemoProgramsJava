@@ -10,7 +10,8 @@ import java.util.stream.Stream;
 
 public class RenameFilesFromDir {
 
-    public static void main(java.lang.String[] args) {
+    @SuppressWarnings("resource")
+	public static void main(java.lang.String[] args) {
 
         //working folder
         Scanner scanner = new Scanner(System.in);
@@ -32,7 +33,8 @@ public class RenameFilesFromDir {
     }
 
 
-    public static void listFiles(String dir, String replaceBy) {
+    @SuppressWarnings("resource")
+	public static void listFiles(String dir, String replaceBy) {
         try {
             Stream<Path> files = Files.find(Paths.get(dir), Integer.MAX_VALUE, (filePath, fileAttr) -> fileAttr.isRegularFile());
 

@@ -1,17 +1,16 @@
-package Assignment;
+package com.demo.program.inheritance;
 
 public class Tablet extends Medicine {
 
-	Tablet(String name, String address){
+	Tablet(String name, String address) {
 		super(name, address);
 	}
-	
-	void displayLabel() 
-	{
-		System.out.println("Name : "+name);
-		System.out.println("Address : "+address);
+
+	void displayLabel() {
+		System.out.println("Name : " + name);
+		System.out.println("Address : " + address);
 		System.out.println("Store in a cool place");
-		
+
 	}
-	
+
 }

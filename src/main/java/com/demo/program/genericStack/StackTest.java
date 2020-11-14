@@ -1,4 +1,4 @@
-package com.generics;
+package com.demo.program.genericStack;
 
 public class StackTest {
 

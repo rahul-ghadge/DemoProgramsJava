@@ -1,9 +1,6 @@
-package filehandling;
+package com.demo.program.filehandling;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -18,9 +15,9 @@ public class WordCount {
 	}
 	
 	
+	@SuppressWarnings("resource")
 	static public int countWords(String filePath) {
 		
-		File file = new File(filePath);
 		int count_words=0;
 		FileReader f;
 		String lines="";

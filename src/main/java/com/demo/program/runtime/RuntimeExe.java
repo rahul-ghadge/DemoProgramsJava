@@ -4,67 +4,58 @@ import java.io.*;
 
 public class RuntimeExe {
 
+	public static String getIfConfig() throws IOException {
 
-    public static String getIfConfig() throws IOException {
+		Runtime runtime = Runtime.getRuntime();
+		Process process = runtime.exec("ifconfig");
 
-        Runtime runtime = Runtime.getRuntime();
-        Process process = runtime.exec("ifconfig");
+		int character;
 
-        int character;
+		StringBuilder builder = new StringBuilder();
 
-        StringBuilder builder = new StringBuilder();
+		while ((character = process.getInputStream().read()) != -1) {
+			builder.append((char) character);
+		}
 
-        while ((character = process.getInputStream().read()) != -1) {
-            builder.append((char) character);
-        }
+		System.out.println(builder);
 
-        System.out.println(builder);
+		return builder.toString();
 
-        return builder.toString();
+	}
 
-    }
+	public static void checkUNIXCommand(String command) throws IOException, InterruptedException {
 
+		Process process = Runtime.getRuntime().exec(command);
 
-    public static void checkUNIXCommand(String command) throws IOException, InterruptedException {
+		StringBuilder builder = new StringBuilder();
+		BufferedReader input = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
-        Process process = Runtime.getRuntime().exec(command);
+		String line;
 
-        int character;
+		while ((line = input.readLine()) != null) {
+			builder.append(line);
+		}
+		System.out.println(builder);
 
-        StringBuilder builder = new StringBuilder();
+		int exitVal = process.waitFor();
+		System.out.println("Exited with error code " + exitVal);
 
+	}
 
-        BufferedReader input = new BufferedReader(new InputStreamReader(
-                process.getInputStream()));
+	public static void main(String[] args) {
 
-        String line;
+		try {
 
-        while ((line = input.readLine()) != null) {
-            builder.append(line);
-        }
-        System.out.println(builder);
+			// getIfConfig();
+			// checkUNIXCommand("ls -lrt");
+			// checkUNIXCommand("pwd");
 
-        int exitVal = process.waitFor();
-        System.out.println("Exited with error code " + exitVal);
+			checkUNIXCommand("tail -f /home/rahulg/nodesource_setup.sh");
 
-    }
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
-
-    public static void main(String[] args) {
-
-        try {
-
-            //getIfConfig();
-            //checkUNIXCommand("ls -lrt");
-            //checkUNIXCommand("pwd");
-
-            checkUNIXCommand("tail -f /home/rahulg/nodesource_setup.sh");
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
+	}
 
 }

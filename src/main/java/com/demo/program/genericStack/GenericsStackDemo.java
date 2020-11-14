@@ -1,8 +1,4 @@
-package com.generics;
-
-import java.util.ArrayList;
-import java.util.List;
-
+package com.demo.program.genericStack;
 
 public class GenericsStackDemo<T> {
 
