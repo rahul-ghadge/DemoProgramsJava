@@ -58,6 +58,7 @@ Here all related codes are places in respective packages listed below.
     - [Functions](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/FunctionDemo.java)
     - [Map Reduce](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/MapReduce.java)
     - [Method Reference](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/MethodReferenceDemo.java)
+    - [Optionals](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/OptionalDemo.java)
     - [Predicates](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/PredicateDemo.java)
     - [Sequential and Parallel Streams](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/SequentialParallelDemo.java)
     - [Streams](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/StreamDemo.java)
