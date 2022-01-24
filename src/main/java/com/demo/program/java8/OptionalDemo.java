@@ -75,7 +75,7 @@ public class OptionalDemo {
             System.out.println("No value is present in optional");
         }
 
-        Optional<Supplier<List<SuperHero>>> optionalSuperHeroSupplier = Optional.ofNullable(SupplierDemo.superHeroSupplier());
+        Optional<Supplier<List<SuperHero>>> optionalSuperHeroSupplier = Optional.of(SupplierDemo.superHeroSupplier());
         if (optionalSuperHeroSupplier.isPresent()) {
             /*
              * Below single line of code is same as commented code:
@@ -98,21 +98,18 @@ public class OptionalDemo {
         optionalString.ifPresent(str -> {
             System.out.println("Upper case string: " + stringUpperCaser.apply(str, Locale.ROOT));   // String -> toUpperCase()
         });
-        
 
         optionalString.ifPresent(str -> {
             System.out.println("String length: " + str.length());  // printing String length
         });
 
         System.out.println("\n*** SuperHero ifPresent() ***");
-        Optional<Supplier<List<SuperHero>>> optionalSuperHeroSupplier = Optional.ofNullable(SupplierDemo.superHeroSupplier());
-        optionalSuperHeroSupplier.ifPresent(heroList -> {
-            heroList.get()                          // Get Superhero list from using optional.get()
-                    .forEach(superHero -> {         // Iterate over Superheroes list
-                        superHero.setName(superHero.getName().toUpperCase(Locale.ROOT));    // Superhero name -> toUpperCase
-                        System.out.println(superHero);
-                    });
-        });
+        Optional<Supplier<List<SuperHero>>> optionalSuperHeroSupplier = Optional.of(SupplierDemo.superHeroSupplier());
+        optionalSuperHeroSupplier.ifPresent(heroList -> heroList.get()                  // Get Superhero list from using optional.get()
+                .forEach(superHero -> {                                                 // Iterate over Superheroes list
+                    superHero.setName(superHero.getName().toUpperCase(Locale.ROOT));    // Superhero name -> toUpperCase
+                    System.out.println(superHero);
+                }));
 
     }
 
@@ -125,13 +122,11 @@ public class OptionalDemo {
 
         optionalSuperHeroSupplier
                 .filter(listSupplier -> !listSupplier.get().isEmpty())  // Filter only if Superhero list is non-empty
-                .ifPresent(listSupplier -> {
-                    listSupplier.get()
-                            .forEach(superHero -> {
-                                superHero.setName(superHero.getName().toUpperCase(Locale.ROOT));
-                                System.out.println(superHero);
-                            });
-                });
+                .ifPresent(listSupplier -> listSupplier.get()
+                        .forEach(superHero -> {
+                            superHero.setName(superHero.getName().toUpperCase(Locale.ROOT));
+                            System.out.println(superHero);
+                        }));
     }
 
 
@@ -144,12 +139,10 @@ public class OptionalDemo {
         optionalSuperHeroSupplier
                 //.filter(listSupplier -> !listSupplier.get().isEmpty()) // optional filter
                 .map(Supplier::get) // same as "map(listSupplier -> listSupplier.get())"
-                .ifPresent(superHeroes -> {
-                    superHeroes.forEach(superHero -> {
-                        superHero.setName(superHero.getName().toUpperCase(Locale.ROOT));
-                        System.out.println(superHero);
-                    });
-                });
+                .ifPresent(superHeroes -> superHeroes.forEach(superHero -> {
+                    superHero.setName(superHero.getName().toUpperCase(Locale.ROOT));
+                    System.out.println(superHero);
+                }));
     }
 
 
@@ -162,6 +155,7 @@ public class OptionalDemo {
         Optional<Optional<String>> optionalOptionalString = Optional.of(optionalString); // Optional of Optional string
 
         String str = optionalOptionalString
+                .filter(Optional::isPresent)
                 .flatMap(optionalStr -> optionalStr)
                 .get();
         System.out.println("String in upper case: " + str.toUpperCase(Locale.ROOT));
@@ -232,9 +226,9 @@ public class OptionalDemo {
 
 
 
-//		  ---------------------------------------------------------------
-//		  Output
-//		  ---------------------------------------------------------------
+//        ---------------------------------------------------------------
+//        Output
+//        ---------------------------------------------------------------
 //        *** Optional empty() ***
 //        Optional.empty
 //
