@@ -6,6 +6,7 @@ Here all related codes are places in respective packages listed below.
 ## Topics Covered per package 
 - [API call](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api)  
     - [Rest API consumer](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api/RestConsumer.java)
+    - [Whitelist api endpoints](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api/WhiteListAPIs.java)
 - [Combination](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/combination)
     - [Array of Combination (Number)](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/NumArrayCombination.java)
     - [String Combination](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/StringCombinations.java)
