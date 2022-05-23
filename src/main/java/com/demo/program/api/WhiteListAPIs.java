@@ -63,3 +63,14 @@ public class WhiteListAPIs {
         return false;
     }
 }
+
+
+
+//		  ---------------------------------------------------------------
+//		  Output
+//		  ---------------------------------------------------------------
+//        Admin is whitelisted: true
+//        User is whitelisted: true
+//        Blog with Id whitelisted: true
+//        Comment with Id is whitelisted: true
+//        Comment with Id is whitelisted: false
