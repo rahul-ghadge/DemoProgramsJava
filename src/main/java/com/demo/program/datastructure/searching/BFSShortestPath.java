@@ -13,7 +13,7 @@ public class BFSShortestPath {
 
 		public String nodeName;
 		public List<Node> neighbourNodes;
-		public boolean visisted;
+		public boolean visited;
 
 		public Node(String node) {
 			nodeName = node;
@@ -27,13 +27,16 @@ public class BFSShortestPath {
 	
 	
 	public void addEdge(String nodeName1, String nodeName2) {
-		Node nodeOne = nodes.get(nodeName1); 		// get node if already present
-		if (null == nodeOne)
-			nodeOne = new Node(nodeName1); 			// if node not present then add new node
+//		Node nodeOne = nodes.getOrDefault(nodeName1, new Node(nodeName1)); 		// get node if already present
+//		if (null == nodeOne)
+//			nodeOne = new Node(nodeName1); 			// if node not present then add new node
 
-		Node nodeTwo = nodes.get(nodeName2);
-		if (null == nodeTwo)
-			nodeTwo = new Node(nodeName2);
+//		Node nodeTwo = nodes.getOrDefault(nodeName2, new Node(nodeName2));
+//		if (null == nodeTwo)
+//			nodeTwo = new Node(nodeName2);
+
+		Node nodeOne = nodes.getOrDefault(nodeName1, new Node(nodeName1));
+		Node nodeTwo = nodes.getOrDefault(nodeName2, new Node(nodeName2));
 
 		nodeOne.addNeighbour(nodeTwo); 				// add edge between node one and two
 		nodeTwo.addNeighbour(nodeOne); 				// add edge between node two and one
@@ -53,19 +56,19 @@ public class BFSShortestPath {
 		
 		while (tempNodes.size() > 0) {
 
-			Node currentNode = tempNodes.get(0);		// get first node from temp list
-			for (Node neightbourNode : currentNode.neighbourNodes) {
+			Node currentNode = tempNodes.remove(0);		// get first node from temp list
+			for (Node neighbourNode : currentNode.neighbourNodes) {
 
 				// if node is not visited and not present in parent nodes
-				if (null != neightbourNode
-						&& !parentNodes.containsKey(neightbourNode.nodeName)	// node should not present in parent nodes map
-						&& !neightbourNode.visisted) {							// node is not visited yet
+				if (null != neighbourNode
+						&& !parentNodes.containsKey(neighbourNode.nodeName)	// node should not present in parent nodes map
+						&& !neighbourNode.visited) {							// node is not visited yet
 
-					tempNodes.add(neightbourNode);									// add node if above condition satisfies
-					parentNodes.put(neightbourNode.nodeName, currentNode.nodeName);	// put neighbour node as parent node
-					neightbourNode.visisted = true;									// set as visited true
+					tempNodes.add(neighbourNode);									// add node if above condition satisfies
+					parentNodes.put(neighbourNode.nodeName, currentNode.nodeName);	// put neighbour node as parent node
+					neighbourNode.visited = true;									// set as visited true
 
-					if (neightbourNode.nodeName.equals(lastNodeName)) { 	// if neighbour node is last node which we are looking
+					if (neighbourNode.nodeName.equals(lastNodeName)) { 	// if neighbour node is last node which we are looking
 						List<String> path = new ArrayList<>();				// then return path from first node to last node
 						while (null != lastNodeName) {
 							path.add(0, lastNodeName);						// add each new node at 0th position
@@ -75,7 +78,7 @@ public class BFSShortestPath {
 					}
 				}
 			}
-			tempNodes.remove(0);
+//			tempNodes.remove(0);
 		}		
 		return null;
 	}

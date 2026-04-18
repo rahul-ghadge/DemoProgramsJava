@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ComparatorOnMultipleFields_Java8 {
 
@@ -18,13 +19,17 @@ public class ComparatorOnMultipleFields_Java8 {
 				.comparing(Employee::getDepartment)
 				.thenComparing(Employee::getFirstName)
 				.thenComparing(Employee::getLastName);
-		
+
 
 		// Apply comparator on Collections.sort() method
 		Collections.sort(employees, compareByName);
 
 		// Print Employee data
-		System.out.println("\n*** After sorting Employees ***\n");
+		System.out.println("\n*** After sorting Employees in Java 8 ***\n");
+		printEmployeeList(employees.stream().sorted(compareByName).collect(Collectors.toList()));
+
+		// Print Employee data
+		System.out.println("\n*** After sorting Employees in Java 7 ***\n");
 		printEmployeeList(employees);
 	}
 

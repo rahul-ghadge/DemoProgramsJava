@@ -23,6 +23,7 @@ public class FunctionalInterfaceMain {
 		for (String name : names) {
 			System.out.println(capitalizeName.capitalize(name));
 		}
+		names.stream().map(capitalizeName::capitalize).forEach(System.out::println);
 	}
 }
 

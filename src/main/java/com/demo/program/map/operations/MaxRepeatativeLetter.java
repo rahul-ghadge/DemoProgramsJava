@@ -6,58 +6,58 @@ import java.util.Map;
 
 public class MaxRepeatativeLetter {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		String str = "This is test programmmmmmm abcd";		
-		System.out.println("Word : " + repeatativeCount(str));
-		
-		str = "No Word";
-		System.out.println("Word : " +repeatativeCount(str));
-	}
+        String str = "This is test programmmmmmm abcd";
+        System.out.println("Word : " + repeatativeCount(str));
 
-	
-	@SuppressWarnings("rawtypes")
-	public static String repeatativeCount(String myString) {
+        str = "No Word";
+        System.out.println("Word : " + repeatativeCount(str));
+    }
 
-		int largestCount = 0;
-		String largestCountWord = "";
 
-		String[] wordsArr = myString.split("\\s+"); // myString.split(" ");
+    @SuppressWarnings("rawtypes")
+    public static String repeatativeCount(String myString) {
 
-		for (int i = 0; i < wordsArr.length; i++) {
+        int largestCount = 0;
+        String largestCountWord = "";
 
-			String word = wordsArr[i];
-			Map<String, Integer> map = new HashMap<>();
+        String[] wordsArr = myString.split("\\s+"); // myString.split(" ");
 
-			for (int j = 0; j < word.length(); j++) {
+        for (int i = 0; i < wordsArr.length; i++) {
 
-				String ch = Character.toString(word.charAt(j));
+            String word = wordsArr[i];
+            Map<String, Integer> map = new HashMap<>();
 
-				if (map.containsKey(ch)) {
-					map.put(ch, map.get(ch) + 1);
-				} else {
-					map.put(ch, 1);
-				}
-			}
+            for (int j = 0; j < word.length(); j++) {
 
-			Iterator it = map.values().iterator();
-			while (it.hasNext()) {
-				int currentCount = (int) it.next();
-				
-				if (currentCount > largestCount) {
-					largestCount = currentCount;
-					largestCountWord = word;
-					
-					//System.out.println("Count :: " + currentCount);
-					//System.out.println("Word :: " + largestCountWord);
-				
-				} else if (largestCount == 1) {
-					largestCountWord = "-1";
-				}
-			}
-		}
-		return largestCountWord;
-	}
+                String ch = Character.toString(word.charAt(j));
+                map.put(ch, map.getOrDefault(ch, 0) + 1);
+//				if (map.containsKey(ch)) {
+//					map.put(ch, map.get(ch) + 1);
+//				} else {
+//					map.put(ch, 1);
+//				}
+            }
+
+            Iterator it = map.values().iterator();
+            while (it.hasNext()) {
+                int currentCount = (int) it.next();
+
+                if (currentCount > largestCount) {
+                    largestCount = currentCount;
+                    largestCountWord = word;
+
+                    //System.out.println("Count :: " + currentCount);
+                    //System.out.println("Word :: " + largestCountWord);
+
+                } else if (largestCount == 1) {
+                    largestCountWord = "-1";
+                }
+            }
+        }
+        return largestCountWord;
+    }
 }
 
 // Output

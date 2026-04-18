@@ -22,7 +22,13 @@ public class AvgSalaryExcludingMinNMax {
             sum += arr[i];
         }
 
-        return (sum - (max + min)) / (arr.length - 2);
+        return (sum - (max + min)) / (arr.length / 2);
 
     }
 }
+
+
+//-----------------------------------------------------------------------------
+//        Output
+//-----------------------------------------------------------------------------
+//        2500

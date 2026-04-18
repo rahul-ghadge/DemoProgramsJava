@@ -11,9 +11,9 @@ public class SumOfPair {
 
         int[] arr = {2, 7, 11, 15};
         int target = 9;
-        String str = Stream.of(sumOfPair(arr,target))
+        String str = Stream.of(sumOfPair(arr, target))
                 .map(String::valueOf)
-                .collect(Collectors.joining(","));
+                .collect(Collectors.joining(", ", "(", ")"));
         System.out.println(str);
     }
 
@@ -32,3 +32,8 @@ public class SumOfPair {
         return null;
     }
 }
+
+//-----------------------------------------------------------------------------
+//        Output
+//-----------------------------------------------------------------------------
+//        (0, 1)

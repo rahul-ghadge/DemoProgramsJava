@@ -1,5 +1,7 @@
 package com.demo.program.leetcode.array;
 
+import java.util.Arrays;
+
 public class MoveZerosAtEnd {
 
     public static void main(String[] args) {
@@ -8,9 +10,11 @@ public class MoveZerosAtEnd {
 
         moveZerosWithPreservingTheOrder(arr);
 
-        for (int n : arr) {
-            System.out.println(n);
-        }
+        System.out.println(Arrays.toString(arr));
+
+//        for (int n : arr) {
+//            System.out.println(n);
+//        }
 
     }
 
@@ -26,3 +30,8 @@ public class MoveZerosAtEnd {
         }
     }
 }
+
+//-----------------------------------------------------------------------------
+//        Output
+//-----------------------------------------------------------------------------
+//        [1, 3, 12, 0, 0, 0]

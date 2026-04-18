@@ -14,12 +14,15 @@ public class DeepCopyUsingClone {
 			SuperHeroNew thorCopy = (SuperHeroNew) thorOriginal.clone();
 
 			System.out.println("Before copy :: " + thorOriginal.profession.name);
+			System.out.println("Before :: " + thorOriginal);
 
 			thorCopy.profession.name = "Protecting his kingdome";
 
 			System.out.println("After copy Obj-1 :: " + thorOriginal.profession.name);
+			System.out.println("After copy Obj-1 :: " + thorOriginal);
 
 			System.out.println("After copy Obj-2:: " + thorCopy.profession.name);
+			System.out.println("After copy Obj-2:: " + thorCopy);
 
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();

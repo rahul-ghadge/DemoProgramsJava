@@ -1,6 +1,12 @@
 package com.demo.program.java8;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -28,36 +34,45 @@ public class CollectorsDemo {
 
     static void agesOperations(List<SuperHero> superHeroes) {
 
+//        Sum of Ages (can fly) :: 96
         long sumOfAges = superHeroes.stream()
                 .filter(hero -> hero.isCanFly())
                 .collect(Collectors.summingLong(SuperHero::getAge));
         System.out.println("Sum of Ages (can fly) :: " + sumOfAges);
 
 
+//        Ages list (can fly) :: [45, 21, 30]
         List<Integer> agesList = superHeroes.stream()
                 .filter(hero -> hero.isCanFly())
                 .collect(Collectors.mapping(SuperHero::getAge, Collectors.toList()));
         System.out.println("\nAges list (can fly) :: " + agesList);
 
 
+//        Average of Ages :: 43.2
         double avgOfAges = superHeroes.stream()
                 //.filter(hero -> hero.isCanFly())
                 .collect(Collectors.averagingDouble(SuperHero::getAge));
         System.out.println("\nAverage of Ages :: " + avgOfAges);
 
 
+
+//        Can fly count :: 3
         long canFlyCount = superHeroes.stream()
                 .filter(hero -> hero.isCanFly())
                 .collect(Collectors.counting());
         System.out.println("\nCan fly count :: " + canFlyCount);
 
 
+
+//        Senior Super Hero :: SuperHero [name=Steve, superName=Captain America, profession=Soldier, age=70, canFly=false]
         Optional<SuperHero> seniorSuperHero = superHeroes.stream()
                 //.filter(hero -> hero.isCanFly())
                 .collect(Collectors.maxBy(Comparator.comparing(SuperHero::getAge)));
         System.out.println("\nSenior Super Hero :: " + seniorSuperHero.get());
 
 
+
+//        Junior Super Hero :: SuperHero [name=Peter, superName=Spider Man, profession=Student, age=21, canFly=true]
         Optional<SuperHero> juniorSuperHero = superHeroes.stream()
                 //.filter(hero -> hero.isCanFly())
                 .collect(Collectors.minBy(Comparator.comparing(SuperHero::getAge)));
@@ -131,6 +146,23 @@ public class CollectorsDemo {
         System.out.println("\n\nSuper Heroes HashMap with canFly key");
         //superHeroesWithFly.forEach((x, y) -> System.out.println(x + " -> " + y));
         superHeroesWithFly.entrySet().forEach(System.out::println);
+
+
+
+        System.out.println("\n\n---------------------------------------------------------");
+        Map<Boolean, Long> groupingByCount = superHeroes.stream()
+//                .filter(hero -> hero.isCanFly())
+                .map(SuperHero::isCanFly)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println("Grouping By Count who can fly and not :: " + groupingByCount);
+
+
+        System.out.println("\n\n---------------------------------------------------------");
+        String str = "somerandomstringwhichusedtocountingchars";
+        Map<Character, Long> map = str.chars()
+                .mapToObj(ch -> (char)ch)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println("Grouping By Count the no of chars :: " + map);
 
     }
 

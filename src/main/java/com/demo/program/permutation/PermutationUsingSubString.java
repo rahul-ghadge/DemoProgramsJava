@@ -14,7 +14,7 @@ public class PermutationUsingSubString {
             System.err.println(perm);
         } else {
             for (int i = 0; i < word.length(); i++) {
-                permutation(perm + word.charAt(i), word.substring(0, i) + word.substring(i + 1, word.length()));
+                permutation(perm + word.charAt(i), word.substring(0, i) + word.substring(i + 1));
 
             }
         }

@@ -9,8 +9,6 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 
-
-
 public class GenericBuilderDemo {
 
     public static void main(String[] args) {
@@ -31,14 +29,12 @@ public class GenericBuilderDemo {
 }
 
 
-
-
 class GenericBuilder<T> {
 
     private final Supplier<T> instantiator;
     private List<Consumer<T>> instanceModifiers = new ArrayList<>();
 
-    public GenericBuilder(Supplier<T> instantiator) {
+    private GenericBuilder(Supplier<T> instantiator) {
         this.instantiator = instantiator;
     }
 

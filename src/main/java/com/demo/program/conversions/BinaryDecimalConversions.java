@@ -17,7 +17,7 @@ public class BinaryDecimalConversions {
 
 	// convert Binary to Decimal using Integers in-built method
 	private static void toDecimalParseInt(String binaryNum) {
-		System.out.println(binaryNum + "'s binary value : "
+		System.out.println(binaryNum + "'s decimal value : "
 				+ Integer.parseInt(binaryNum, 2));
 	}
 

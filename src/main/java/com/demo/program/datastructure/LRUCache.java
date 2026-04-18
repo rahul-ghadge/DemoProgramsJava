@@ -20,7 +20,7 @@ public class LRUCache {
 
 
     public LRUCache() {
-        hashmap = new HashMap<Integer, Entry>();
+        hashmap = new HashMap<>();
     }
 
 
@@ -54,7 +54,7 @@ public class LRUCache {
 
     public void putEntry(int key, int value) {
         if (hashmap.containsKey(key))
-            // Key Already Exist, just update the value and move it to top
+        // Key Already Exist, just update the value and move it to top
         {
             Entry entry = hashmap.get(key);
             entry.value = value;
@@ -69,7 +69,7 @@ public class LRUCache {
             newnode.value = value;
             newnode.key = key;
             if (hashmap.size() > LRU_SIZE)
-                // We have reached maximum size so need to make room for new element.
+            // We have reached maximum size so need to make room for new element.
             {
                 hashmap.remove(end.key);
                 removeNode(end);

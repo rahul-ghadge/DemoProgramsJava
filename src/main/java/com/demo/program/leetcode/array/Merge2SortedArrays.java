@@ -1,5 +1,7 @@
 package com.demo.program.leetcode.array;
 
+import java.util.Arrays;
+
 public class Merge2SortedArrays {
     public static void main(String[] args) {
 
@@ -14,10 +16,11 @@ public class Merge2SortedArrays {
 
         mergeArrays(arr1, numberOfEleInArr1, arr2, numberOfEleInArr2);
 
-        for (int num :
-                arr1) {
-            System.out.println(num + " ");
-        }
+        System.out.println(Arrays.toString(arr1));
+
+//        for (int num : arr1) {
+//            System.out.print(num + " ");
+//        }
     }
 
     static void mergeArrays(int[] arr1, int p, int arr2[], int m) {
@@ -40,3 +43,8 @@ public class Merge2SortedArrays {
 
     }
 }
+
+//-----------------------------------------------------------------------------
+//        Output
+//-----------------------------------------------------------------------------
+//        [1, 2, 3, 5, 8, 10]

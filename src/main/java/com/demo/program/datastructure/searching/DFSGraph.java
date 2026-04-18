@@ -1,8 +1,8 @@
 package com.demo.program.datastructure.searching;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 
 public class DFSGraph {	
@@ -38,8 +38,9 @@ public class DFSGraph {
 	
 	// DFS using stack
 	public void dfsUsingStack(Node parentNode) {
-		Stack<Node> stack = new Stack<>();		
-		stack.add(parentNode);
+		LinkedList<Node> stack = new LinkedList<>();
+//		Stack<Node> stack = new Stack<>();
+		stack.push(parentNode);
 		
 		while (!stack.isEmpty()) {			
 			Node currentNode = stack.pop();
@@ -51,7 +52,7 @@ public class DFSGraph {
 			
 			for (Node node : currentNode.neighbourNodes) {
 				if(null != node && !node.visited) 
-					stack.add(node);
+					stack.push(node);
 			}
 		}
 	}
