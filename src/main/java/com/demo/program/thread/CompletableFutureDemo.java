@@ -23,7 +23,7 @@ public class CompletableFutureDemo {
         completableFuture.cancel(true);
     }
 
-        private static void myCompletableFuture() {
+    private static void myCompletableFuture() {
         CompletableFuture<String> completableFuture
                 = CompletableFuture.supplyAsync(() -> "Hello");
 
