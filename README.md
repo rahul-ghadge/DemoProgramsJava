@@ -1,4 +1,60 @@
-# DemoPrograms
+# DemoProgramsJava
+
+A curated collection of **Core Java programs and practical examples** designed to strengthen Java fundamentals, improve problem-solving skills, and support technical interview preparation.
+
+This repository demonstrates real-world Java concepts including:
+
+- Collections Framework
+- Java 8 Stream API
+- Multithreading
+- Functional Interfaces
+- Comparator & Comparable
+- Generics
+- Reflection API
+- Recursion
+- Data Structures
+- Common coding patterns
+
+---
+
+## Why This Repository?
+
+Many developers understand Java syntax but struggle with applying concepts in practical scenarios.
+
+This repository helps by providing:
+
+✅ Small focused examples  
+✅ Interview-oriented coding problems  
+✅ Clean Java implementations  
+✅ Topic-wise organization  
+✅ Easy-to-understand logic
+
+It can be used as a:
+
+- Java revision guide
+- Interview preparation resource
+- Learning reference
+- Mentoring support repository
+
+---
+
+## Project Structure
+
+```bash
+DemoProgramsJava/
+│── collections/
+│── streams/
+│── multithreading/
+│── recursion/
+│── generics/
+│── comparator/
+│── reflection/
+│── datastructures/
+└── README.md
+```
+
+
+
 In this repository all Core Java related programs are added, which are mostly tricky one.  
 Topics: Core java, Collection, Multi threading, Data Structure, Generics, Java8 features, Streams, Functional Interfaces, Reflection, Recursion, Comparator related interview programs.
 Here all related codes are places in respective packages listed below.  
@@ -7,6 +63,10 @@ Here all related codes are places in respective packages listed below.
 - [API call](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api)  
     - [Rest API consumer](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api/RestConsumer.java)
     - [Whitelist api endpoints](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/api/WhiteListAPIs.java)
+- [ci (Coding Interview)](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/ci)  
+    - [Maximum Profit](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/ci/MaximumProfit.java)
+    - [Roman to Integer](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/ci/RomanToInteger.java)
+    - [Shift to Zeros to left or right in array](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/ci/ShiftZerosToLeftRight.java)
 - [Combination](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/combination)
     - [Array of Combination (Number)](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/NumArrayCombination.java)
     - [String Combination](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/combination/StringCombinations.java)
@@ -35,7 +95,11 @@ Here all related codes are places in respective packages listed below.
     - [Detect and Remove Loop in Linked List](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/datastructure/LoopInLinkedList.java)
     - [LRU (Last Recently Used) Cache](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/LRUCache.java)
     - [Find Value in Binary Tree](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/ValueInBinaryTree.java)
+    - [Traverse through Weighted Graph](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/datastructure/WeightedGraph.java)
 - [Elevator program](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/elevator)
+- [File](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/file)
+  - [Remove matching files in java8](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/file/RemovingMatchingFiles.java)
+  - [Rename files from directory in java8](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/file/RenameFilesFromDir.java)
 - [Finally Block](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/finaly/FinallyBlock.java)
 - [Generics](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/generics)
     - [Lower Bounded Wildcards](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/generics/LowerBoundedWildcards.java)
@@ -48,6 +112,8 @@ Here all related codes are places in respective packages listed below.
 - [Java 8 Features](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/java8)
     - [Design pattern using java8](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/java8/design/pattern) 
         - [Builder Design pattern using java8](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/java8/design/pattern/GenericBuilderDemo.java) 
+    - [Advanced Optional Demo](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/AdvancedOptionalDemo.java)
+    - [Advanced Stream operations on Department](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/AdvancedStreamOperations.java)
     - [Functional Interfaces](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
     - [BiConsumer](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/BiConsumerDemo.java)
     - [BiFunction](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/BiFunctionDemo.java)
@@ -55,6 +121,7 @@ Here all related codes are places in respective packages listed below.
     - [Collectors utility class](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/CollectorsDemo.java)
     - [Comparator](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/ComparatorDemo.java)
     - [Consumer](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/ConsumerDemo.java)
+    - [Custom Collector class](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/CustomCollectorDemo.java)
     - [Custom Functional Interface with default & static methods](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/FunctionalInterfaceImplementation.java)
     - [Functions](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/FunctionDemo.java)
     - [Map Reduce](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/MapReduce.java)
@@ -64,6 +131,24 @@ Here all related codes are places in respective packages listed below.
     - [Sequential and Parallel Streams](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/SequentialParallelDemo.java)
     - [Streams](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/StreamDemo.java)
     - [Suppliers](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/java8/SupplierDemo.java)
+- [Leet code](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode)
+    - [Array operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/array)
+        - [Average salary excluding min and max salary](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/AvgSalaryExcludingMinNMax.java)
+        - [Find duplicate elements in array](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/FindDuplicate.java) 
+        - [Find the pair of K difference](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/FindKDifferenceCount.java) 
+        - [Find missing element from array](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/FindMissingNoFromArray.java) 
+        - [Jump by value](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/JumpByValue.java) 
+        - [Merge 2 sorted arrays](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/Merge2SortedArrays.java) 
+        - [Move all Zeros at end](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/MoveZerosAtEnd.java) 
+        - [Number of sub arrays multiplication less than K](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/NumSubArrLessThanK.java) 
+        - [Number of Sequential digits between given range of numbers](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/SequentialDigits.java) 
+        - [Number of paise which sum of pairs equals to K](https://github.com/rahul-ghadge/DemoProgramsJava/blob/master/src/main/java/com/demo/program/leetcode/array/SequentialDigits.java) 
+    - [Number operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/num)
+        - [Number Palindrome](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/num/Palindrome.java)
+        - [X power of N](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/num/XPowN.java)
+    - [String operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/string)
+        - [Anagram string](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/string/AnagramString.java)
+        - [Reverse string](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/leetcode/string/ReverseString.java)
 - [List Operations](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/list/operations)
     - [Find Missing Elements from Duplicate List](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/list/operations/FindMissingElementFromDuplicateList.java)
     - [Remove Duplicate Elements from List](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/list/operations/RemoveDuplicateFromList.java)  
@@ -110,6 +195,7 @@ Here all related codes are places in respective packages listed below.
     - [Run SQL Script on Oracle DB](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/store/sql)
 - [Multi-threading](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread)
     - [Blocking Queue](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/BlockingQueueDemo.java)
+    - [Completable Future](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/CompletableFutureDemo.java)
     - [Countdown Latch](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/CountdownLatchDemo.java)
     - [Cyclic Barrier ](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/CyclicBarrierDemo.java)
     - [Hello World Printing(100 times) from 2 Different Threads](https://github.com/rahul-ghadge/DemoProgramsJava/tree/master/src/main/java/com/demo/program/thread/HelloWorldPrint.java)

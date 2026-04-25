@@ -26,7 +26,7 @@ public class RenameFilesFromDir {
         listFiles(dir, replaceBy);
 
         //rename files - replace text in the name with song.text
-        //renameFiles(dir, "abc", "xyz");
+        renameFiles(dir, "abc", "xyz");
 
         //recursively list files after renaming
         listFiles(dir, null);
